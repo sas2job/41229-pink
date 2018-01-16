@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Смирнов](https://up.htmlacademy.ru/adaptive/13/user/41229).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Гурьев](https://htmlacademy.ru/profile/danakishi).
 
 ---
 
