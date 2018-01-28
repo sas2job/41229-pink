@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  margin: 0 auto;
+}
+
+.social__item {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  &--tw {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--yt {
+    background-image: url("..//img/icon-youtube.svg");
+    margin-right: 0;
+  }
+}

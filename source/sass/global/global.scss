@@ -1,0 +1,49 @@
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: font-open-sans;
+  letter-spacing: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $main-text-color;
+  background-color: $main-bg-color;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:active {
+    color: inherit;
+  }
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -3,29 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Navigation begin-->
   <header class="page-header">
-    <div class="page-header__wrapper container">
+    <div class="page-header__wrapper">
       <h1 class="page-header__title  visually-hidden">Мобильное приложение Pink</h1>
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/80x25" width="80" height="25" alt="Логотип Пинк»">
+        <img class="page-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк»">
       </a>
-      <button class="page-header__toggle" type="button">Открыть меню</button>
-      <nav class="main-nav">
+      <nav class="main-nav nav-main--opened">
+        <button class="page-header__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Фотографии</a>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,13 +37,19 @@
   <main class="page-main">
 
     <!-- INTRO begin -->
-    <section class="intro">
-      <div class="intro__wrapper container">
+    <section class="intro intro--index">
+      <div class="into__wrapper intro__wrapper--index">
         <a class="intro__btn  btn" href="#">Скачать приложение</a>
         <div class="intro__list">
-          <a class="intro__item" href="#">Apple</a>
-          <a class="intro__item" href="#">Android</a>
-          <a class="intro__item" href="#">Windows</a>
+          <a class="intro__item intro__item--apple" href="#">
+            <span class="visually-hidden">Apple</span>
+          </a>
+          <a class="intro__item intro__item--android" href="#">
+            <span class="visually-hidden">Android</span>
+          </a>
+          <a class="intro__item intro__item--windows" href="#">
+            <span class="visually-hidden">Windows</span>
+          </a>
         </div>
         <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
@@ -51,22 +58,22 @@
 
     <!-- Information begin -->
     <section class="information">
-      <div class="information__head container">
-        <p class="information__text">Устали от серости мегаполиса?</p>
-        <p class="information__text">Нам есть, что вам предложить!</p>
+      <div class="information__wrapper container">
+        <h2 class="information__title">Устали от серости мегаполиса?</h2>
+        <h2 class="information__title">Нам есть, что вам предложить!</h2>
       </div>
       <div class="advantage">
         <ul class="advantage__list  container">
           <li class="advantage__item">
-            <h2 class="advantage__title">Поднимает настроение</h2>
+            <h3 class="advantage__title">Поднимает настроение</h3>
             <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
           <li class="advantage__item">
-            <h2 class="advantage__title">Меняет мир вокруг</h2>
+            <h3 class="advantage__title">Меняет мир вокруг</h3>
             <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantage__item">
-            <h2 class="advantage__title">Заводит новых друзей</h2>
+            <h3 class="advantage__title">Заводит новых друзей</h3>
             <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новыхы</p>
           </li>
         </ul>
@@ -88,15 +95,15 @@
           <label for="slide-2"></label>
           <label for="slide-3"></label>
         </div>
-        <blockquote class="review__slide  review__slider--1">
+        <blockquote class="review__slide  review__slide--1">
           <cite class="review__author">Николай Петров</cite>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="review__slide  review__slider--2">
+        <blockquote class="review__slide  review__slide--2">
           <cite class="review__author">Николай Петров</cite>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в  комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="review__slide  review__slider--3">
+        <blockquote class="review__slide  review__slide--3">
           <cite class="review__author">Николай Петров</cite>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
@@ -118,15 +125,15 @@
         <thead class="price__top">
           <tr class="price__row">
             <th class="price__header  price__header--base">
-              <strong class="price__name">База</strong>
+              <p class="price__name">База</p>
               <span class="price__value">1,99 USD</span>
             </th>
             <th class="price__header  price__header--standart">
-              <strong class="price__name">Стандарт</strong>
+              <p class="price__name">Стандарт</p>
               <span class="price__value">3,99 USD</span>
             </th>
             <th class="price__header  price__header--unlim">
-              <strong class="price__name">Безлимит</strong>
+              <p class="price__name">Безлимит</p>
               <span class="price__value">9,99 USD</span>
             </th>
           </tr>
@@ -173,11 +180,11 @@
     <!-- Contacts begin -->
 
     <section class="contacts">
-      <div class="contacts__head  container">
-        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contacts__info  container">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <h2 class="contacts__title">Звоните:</h2>
+            <h3 class="contacts__title">Звоните:</h3>
             <span class="contacts__type">+7 (812) 555-66-66</span>
           </li>
           <li class="contacts__item">
@@ -185,14 +192,12 @@
             <span class="contacts__type">mail@htmlacademy.ru</span>
           </li>
           <li class="contacts__item">
-            <h2 class="contacts__title">Приезжайте в гости:</h2>
+            <h3 class="contacts__title">Приезжайте в гости:</h3>
             <span class="contacts__type">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
       </div>
-      <div class="contacts__map">
-        <img src="http://placehold.it/316x612" width="316" height="612" alt="Расположение офиса">
-      </div>
+      <div class="contacts__map"></div>
     </section>
     <!-- Contacts end -->
 
@@ -201,17 +206,17 @@
   <!-- Footer begin -->
   <footer class="page-footer  visually-hidden">
     <a class="page-footer__logo">
-      <img src="http://placehold.it/60x45" width="60" height="45" alt="Логотип Pink">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
     </a>
     <div class="page-footer__social  social">
-      <a class="social__item" href="#">
-        <span class="visually-hidden">Twitter</span><svg></svg>
+      <a class="social__item social__item--tw" href="#">
+        <span class="visually-hidden">Twitter</span>
       </a>
-      <a class="social__item" href="#">
-        <span class="visually-hidden">Facebook</span><svg></svg>
+      <a class="social__item social__item--fb" href="#">
+        <span class="visually-hidden">Facebook</span>
       </a>
-      <a class="social__item" href="#">
-        <span class="visually-hidden">Youtube</span><svg></svg>
+      <a class="social__item social__item--yt" href="#">
+        <span class="visually-hidden">Youtube</span>
       </a>
     </div>
     <div class="page-footer__copyright">

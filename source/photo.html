@@ -3,29 +3,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк - фотографии</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <!-- Navigation begin-->
   <header class="page-header">
-    <div class="page-header__wrapper container">
+    <div class="page-header__wrapper">
       <h1 class="page-header__title  visually-hidden">Мобильное приложение Pink</h1>
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/80x25" width="80" height="25" alt="Логотип Пинк»">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк»">
       </a>
       <button class="page-header__toggle" type="button">Открыть меню</button>
-      <nav class="main-nav">
+      <nav class="main-nav nav-main--opened">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Фотографии</a>
+            <a class="main-nav__link" href="#">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Конкурс</a>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -38,7 +39,7 @@
     <!-- INTRO begin -->
     <section class="intro">
       <div class="intro__wrapper container">
-        <h1 class="intro__text">Фотографии пользователей</h1>
+        <h2 class="intro__title">Фотографии пользователей</h2>
       </div>
     </section>
     <!-- Intro end -->
@@ -51,11 +52,11 @@
       </div>
       <div class="photo-post">
         <article class="photo-post__item photo-post__item--panorama">
-          <a class="photo-post__image--panorama">
-            <img src="http://placehold.it/320x140" width="320" height="140" alt="Панорама дня">
+          <a class="photo-post__image photo-post__image--panorama">
+            <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
           </a>
           <div class="container">
-            <blockquote class="photo-post__comment--panorama">
+            <blockquote class="photo-post__comment photo-post__comment--panorama">
               <cite class="photo-post__author">Анна</cite>
               <time class="photo-post__date">(5 минут назад)</time>
               <p class="photo-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -66,7 +67,7 @@
         <div class="photo-post__wrapper  container">
           <article class="photo-post__item">
             <a class="photo-post__image">
-              <img src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+              <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
           <blockquote class="photo-post__comment">
             <cite class="photo-post__author">Левон</cite>
@@ -77,7 +78,7 @@
         </article>
         <article class="photo-post__item">
           <a class="photo-post__image">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+            <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
           <blockquote class="photo-post__comment">
             <cite class="photo-post__author">Антон</cite>
@@ -88,7 +89,7 @@
         </article>
         <article class="photo-post__item">
           <a class="photo-post__image">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+            <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
           <blockquote class="photo-post__comment">
             <cite class="photo-post__author">Борис</cite>
@@ -99,7 +100,7 @@
         </article>
         <article class="photo-post__item">
           <a class="photo-post__image">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+            <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
           <blockquote class="photo-post__comment">
             <cite class="photo-post__author">Сергей</cite>
@@ -110,7 +111,7 @@
         </article>
         <article class="photo-post__item">
           <a class="photo-post__image">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+            <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
           <blockquote class="photo-post__comment">
             <cite class="photo-post__author">Максим</cite>
@@ -121,7 +122,7 @@
         </article>
         <article class="photo-post__item">
           <a class="photo-post__image">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фотография пользователя">
+            <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
           </a>
           <blockquote class="photo-post__comment">
             <cite class="photo-post__author">Надежда</cite>
@@ -136,17 +137,17 @@
 
     <!--Upload begin-->
     <section class="upload">
-      <div class="container">
+      <div class="upload__wrapper container">
         <p class="upload__text">Затмите их всех!</p>
         <p class="upload__text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <form class="upload__form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="container">
-          <img class="upload__image" src="http://placehold.it/280x375" width="280" height="375" alt="Фото для загрузки">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фото для загрузки">
           <div class="upload__controls">
             <button class="upload__toggle  upload__toggle--crop" type="button"></button>
-            <button class="upload__toggle  upload__toggle--saturation" type="button"></button>
-            <button class="upload__toggle  upload__toggle--contrast" type="button"></button>
+            <button class="upload__toggle  upload__toggle--fill" type="button"></button>
+            <button class="upload__toggle  upload__toggle--contract" type="button"></button>
           </div>
           <div class="upload__range">
             <div class="upload__scale">
@@ -162,19 +163,19 @@
   </main>
 
   <!-- Footer begin -->
-  <footer class="page-footer">
-    <a class="page-footer__logo">
-      <img src="http://placehold.it/60x45" width="60" height="45" alt="Логотип Pink">
+  <footer class="page-footer container">
+    <a class="page-footer__logo" href="index.html">
+      <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип Pink">
     </a>
     <div class="page-footer__social  social">
-      <a class="social__item" href="#">
-        <span class="visually-hidden">Twitter</span><svg></svg>
+      <a class="social__item social__item--tw" href="#">
+        <span class="visually-hidden">Twitter</span>
       </a>
-      <a class="social__item" href="#">
-        <span class="visually-hidden">Facebook</span><svg></svg>
+      <a class="social__item social__item--fb" href="#">
+        <span class="visually-hidden">Facebook</span>
       </a>
-      <a class="social__item" href="#">
-        <span class="visually-hidden">Youtube</span><svg></svg>
+      <a class="social__item social__item--yt" href="#">
+        <span class="visually-hidden">Youtube</span>
       </a>
     </div>
     <div class="page-footer__copyright">
