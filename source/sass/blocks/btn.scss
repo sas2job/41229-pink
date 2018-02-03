@@ -1,9 +1,11 @@
 .btn {
   display: block;
   width: 280px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-family: $font-open-sans-bold;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: $font-open-sans;
+  line-height: 18px;
+  font-weight: 700;
   font-size: 18px;
   color: $secondary-text-color;
   text-align: center;
