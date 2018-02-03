@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: $font-open-sans;
+  font-weight: 400;
   letter-spacing: normal;
   font-size: 14px;
   line-height: 30px;
@@ -49,4 +50,20 @@ input[type="radio"].visually-hidden {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/*--tablet mode--*/
+
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 660px;
+  }
+}
+
+/*--desktop mode--*/
+
+@media (min-width: $desktop-width) {
+  body {
+    min-width: 960px;
+  }
 }

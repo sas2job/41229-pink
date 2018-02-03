@@ -1,12 +1,46 @@
 .page-header {
   background-color: $secondary-color;
   color: $secondary-text-color;
-  margin-bottom: 0;
+  position: relative;
+  z-index: 5;
+  margin-bottom: -65px;
 }
 
 .page-header__logo {
   display: block;
   width: 80px;
   height: 25px;
-  padding: 11px 20px;
+  padding: 21px 20px;
+}
+
+/*--tablet mode--*/
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    margin-bottom: -110px;
+  }
+
+  .page-header__logo {
+    padding: 43px 20px;
+  }
+}
+
+/*--desktop mode--*/
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .page-header__logo {
+    padding: 36px 20px;
+  }
 }
