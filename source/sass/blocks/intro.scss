@@ -21,7 +21,6 @@
   &--index {
     padding-top: 500px;
     padding-bottom: 30px;
-;
   }
 }
 
@@ -109,17 +108,17 @@
   }
 
   .intro__title {
-  padding-top: 150px;
-  font-size: 40px;
-  line-height: 50px;
-}
+    padding-top: 150px;
+    font-size: 40px;
+    line-height: 50px;
+  }
 
-.intro--index .intro__title {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-  padding-top: 100px;
+  .intro--index .intro__title {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-top: 100px;
   }
 }
 
@@ -155,7 +154,8 @@
   .intro--index .intro__title {
     display: none;
   }
+
   .intro__text {
-  display: none;
+    display: none;
   }
 }
