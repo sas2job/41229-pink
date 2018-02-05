@@ -5,3 +5,21 @@
   padding-right: 20px;
   outline: 1px solid black;
 }
+
+/*-- tablet mode--*/
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 620px;
+  }
+}
+
+/*--desktop mode--*/
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
