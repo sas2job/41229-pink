@@ -11,7 +11,9 @@
 
 .page-footer__logo {
   width: 150px;
-  margin-bottom: 35px;
+  margin-left: 3px;
+  margin-bottom: 40px;
+  outline: none;
 }
 
 .page-footer__copyright {
@@ -26,6 +28,7 @@
   background-position: 100% 0%;
   background-repeat: no-repeat;
   background-size: 30px 35px;
+  outline: none;
 }
 
 .page-footer__note {
@@ -45,15 +48,22 @@
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
+    padding-top: 33px;
     margin: 0 auto;
   }
 
   .page-footer__logo {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
+    margin-left: 0;
   }
 
   .page-footer__copyright {
     margin-bottom: 20px;
+    padding-left: 22px;
+  }
+
+  .page-footer__note {
+    margin-right: 42px;
   }
 }
 
@@ -62,5 +72,20 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 940px;
+    padding-top: 67px;
+    padding-bottom: 33px;
+  }
+
+  .page-footer__logo {
+    padding-right: 26px;
+  }
+
+  .page-footer__copyright {
+    padding-left: 15px;
+  }
+
+  .page-footer__note {
+    font-size: 18px;
+    line-height: 18px;
   }
 }

@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Пинк - главная</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Пинк - главная</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 <body>
-  <!-- Navigation begin-->
-  <header class="page-header page-header--index">
-    <div class="page-header__wrapper">
-      <h1 class="page-header__title  visually-hidden">Мобильное приложение Pink</h1>
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="/img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Пинк»">
-      </a>
-      <nav class="main-nav nav-main--opened">
-        <button class="page-header__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <!-- Navigation end-->
 
-  <main class="page-main">
+  <!-- Navigation begin-->
+
+  <header class="page-header page-header--index">
+    <section class="page-header__menu  page-header__menu--opened">
+      <div class="page-header__wrapper">
+        <h1 class="page-header__title  visually-hidden">Pink</h1>
+        <a class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Логотип Pink">
+        </a>
+        <nav class="main-nav  main-nav--opened  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--current">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
 
     <!-- INTRO begin -->
+
     <section class="intro intro--index">
       <div class="into__wrapper intro__wrapper--index">
-        <h2 class="intro__title">Взгляните на жизнь иначе</h2>
+        <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
         <a class="intro__btn  btn" href="#">Скачать приложение</a>
         <div class="intro__list">
           <a class="intro__item intro__item--apple" href="#">
@@ -58,6 +62,10 @@
     </section>
     <!-- Intro end -->
 
+    </header>
+    <!-- Navigation end-->
+
+    <main class="page-main">
     <!-- Information begin -->
     <section class="information">
       <div class="information__wrapper container">
@@ -80,7 +88,7 @@
           </li>
         </ul>
         <div class="advantage__effect">
-          <h3 class="advantage__title  advantage__title--tablet">Эффект на&nbsp;24 часа!</h3>
+          <h3 class="advantage__title  advantage__title--effect">Эффект на&nbsp;24 часа!</h3>
           <p class="advantage__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
           <a class="advantage__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -95,9 +103,9 @@
         <input class="review__toggle  review__toggle--2  visually-hidden" type="radio" id="slide-2" name="review__toggle">
         <input class="review__toggle  review__toggle--3  visually-hidden" type="radio" id="slide-3" name="review__toggle">
         <div class="review__controls">
-          <label for="slide-1"></label>
-          <label for="slide-2"></label>
-          <label for="slide-3"></label>
+          <label class="review__label" for="slide-1"></label>
+          <label class="review__label" for="slide-2"></label>
+          <label class="review__label" for="slide-3"></label>
         </div>
         <blockquote class="review__slide  review__slide--1">
           <cite class="review__author">Николай Петров</cite>
@@ -114,6 +122,12 @@
           <p class="reviews__info">45 лет, пилот самолёта</p>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
+          <button class="review__arrow  review__arrow--previous" type="button">
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="review__arrow  review__arrow--next" type="button">
+            <span class="visually-hidden">Следующий</span>
+          </button>
       </div>
     </section>
     <!-- Reivew end -->
@@ -123,11 +137,6 @@
       <input class="price__toggle  price__toggle--1  visually-hidden" type="radio" id="price-1" name="price-toggle">
       <input class="price__toggle  price__toggle--2  visually-hidden" type="radio" id="price-2" name="price-toggle" checked>
       <input class="price__toggle  price__toggle--3  visually-hidden" type="radio" id="price-3" name="price-toggle">
-      <div class="price__controls">
-        <label for="price-1"></label>
-        <label for="price-2"></label>
-        <label for="price-3"></label>
-      </div>
       <table class="price__list">
         <thead class="price__top">
           <tr class="price__row">
@@ -136,7 +145,7 @@
               <p class="price__name">База</p>
               <span class="price__value">1,99 USD</span>
             </th>
-            <th class="price__header  price__header--standart">
+            <th class="price__header  price__header--standart price__header--hit">
               <p class="price__name">Стандарт</p>
               <span class="price__value">3,99 USD</span>
             </th>
@@ -191,30 +200,36 @@
           </tr>
         </tbody>
       </table>
+      <div class="price__controls">
+        <label class="price__label" for="price-1"></label>
+        <label class="price__label" for="price-2"></label>
+        <label class="price__label" for="price-3"></label>
+      </div>
     </section>
     <!-- Price end -->
 
     <!-- Contacts begin -->
-
     <section class="contacts">
       <div class="contacts__info  container">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--phone">
             <h3 class="contacts__title">Звоните:</h3>
             <span class="contacts__type">+7 (812) 555-66-66</span>
           </li>
-          <li class="contacts__item contacts__item--address">
+          <li class="contacts__item contacts__item--email">
             <h2 class="contacts__title">Пишите:</h2>
             <span class="contacts__type">mail@htmlacademy.ru</span>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--address">
             <h3 class="contacts__title">Приезжайте в гости:</h3>
             <span class="contacts__type">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1153.9413774477023!2d30.3207760384427!3d59.93631663233066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506092349588 "width="320" height="219" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+      </div>
     </section>
     <!-- Contacts end -->
 
@@ -245,5 +260,26 @@
   </footer>
   <!-- Footer end -->
 
+  <script>
+    var navMain = document.querySelector(".main-nav");
+    var menuMain = document.querySelector(".page-header__menu");
+    var navToggle = document.querySelector(".main-nav__toggle");
+
+    navMain.classList.remove("main-nav--nojs");
+
+    navToggle.addEventListener("click", function() {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+        menuMain.classList.remove("page-header__menu--closed");
+        menuMain.classList.add("page-header__menu--opened");
+      } else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+        menuMain.classList.add("page-header__menu--closed");
+        menuMain.classList.remove("page-header__menu--opened");
+      }
+    });
+  </script>
 </body>
 </html>
