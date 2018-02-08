@@ -144,7 +144,7 @@
     width: 200px;
     margin-bottom: 31px;
     padding-top: 104px;
-    padding-left: 50px;
+    padding-left: 15px;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -163,6 +163,11 @@
   .intro__text {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .intro--index .intro__text {
+    display: block;
+    width: 300px;
   }
 }
 
