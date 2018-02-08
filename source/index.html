@@ -46,15 +46,15 @@
       <div class="container">
         <div class="into__wrapper intro__wrapper--index">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-          <a class="intro__btn  btn" href="#">Скачать приложение</a>
+          <a class="intro__btn  btn" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <div class="intro__list">
-            <a class="intro__item intro__item--apple" href="#">
+            <a class="intro__item intro__item--apple" href="https://www.apple.com/ru/iphone/">
               <span class="visually-hidden">Apple</span>
             </a>
-            <a class="intro__item intro__item--android" href="#">
+            <a class="intro__item intro__item--android" href="https://play.google.com/store">
               <span class="visually-hidden">Android</span>
             </a>
-            <a class="intro__item intro__item--windows" href="#">
+            <a class="intro__item intro__item--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?rtc=1">
               <span class="visually-hidden">Windows</span>
             </a>
           </div>
@@ -103,33 +103,33 @@
       <div class="container">
         <input class="review__toggle  review__toggle--1  visually-hidden" type="radio" id="slide-1" name="review__toggle" checked>
         <input class="review__toggle  review__toggle--2  visually-hidden" type="radio" id="slide-2" name="review__toggle">
-        <input class="review__toggle  review__toggle--3  visually-hidden" type="radio" id="slide-3" name="review__toggle">
+        <input class="review__toggle  review__toggle--3  visually-hidden" type="radio" id="slide-3" name="reviews__toggle">
         <div class="review__controls">
           <label class="review__label" for="slide-1"></label>
           <label class="review__label" for="slide-2"></label>
           <label class="review__label" for="slide-3"></label>
         </div>
-        <blockquote class="review__slide  review__slide--1">
+        <blockquote class="review__slide  review__slide--first">
           <cite class="review__author">Николай Петров</cite>
-          <p class="reviews__info">25 лет, водитель трамвая</p>
+          <p class="review__info">25 лет, водитель трамвая</p>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-        <blockquote class="review__slide  review__slide--2">
-          <cite class="review__author">Николай Петров</cite>
-          <p class="reviews__info">35 лет, машинист поезда </p>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в  комментариях к выложенной фотографии!»</p>
-        </blockquote>
-        <blockquote class="review__slide  review__slide--3">
-          <cite class="review__author">Николай Петров</cite>
-          <p class="reviews__info">45 лет, пилот самолёта</p>
+        <blockquote class="review__slide  review__slide--second">
+          <cite class="review__author">Николай Иванов</cite>
+          <p class="review__info">35 лет, машинист поезда </p>
           <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </blockquote>
-          <button class="review__arrow  review__arrow--previous" type="button">
-            <span class="visually-hidden">Предыдущий</span>
-          </button>
-          <button class="review__arrow  review__arrow--next" type="button">
-            <span class="visually-hidden">Следующий</span>
-          </button>
+        <blockquote class="review__slide  review__slide--third">
+          <cite class="review__author">Николай Сидоров</cite>
+          <p class="review__info">45 лет, пилот самолёта</p>
+          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <button class="review__arrow  review__arrow--previous" type="button">
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="review__arrow  review__arrow--next" type="button">
+          <span class="visually-hidden">Следующий</span>
+        </button>
       </div>
     </section>
     <!-- Reivew end -->
@@ -216,15 +216,15 @@
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--phone">
-            <h3 class="contacts__title">Звоните:</h3>
+            <h3 class="contacts__title contacts__title--phone">Звоните:</h3>
             <span class="contacts__type">+7 (812) 555-66-66</span>
           </li>
           <li class="contacts__item contacts__item--email">
-            <h2 class="contacts__title">Пишите:</h2>
+            <h2 class="contacts__title contacts__title--email">Пишите:</h2>
             <span class="contacts__type">mail@htmlacademy.ru</span>
           </li>
           <li class="contacts__item contacts__item--address">
-            <h3 class="contacts__title">Приезжайте в гости:</h3>
+            <h3 class="contacts__title contacts__title--address">Приезжайте в гости:</h3>
             <span class="contacts__type">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
@@ -256,8 +256,7 @@
     <div class="page-footer__copyright">
       <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="page-footer__note">Разработано</span>
-        <img src="http://placehold.it/35x40" width="35" height="40" alt="Логотип HTML Academy">
-        </a>
+      </a>
       </div>
   </footer>
   <!-- Footer end -->

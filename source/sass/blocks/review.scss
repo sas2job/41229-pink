@@ -9,14 +9,14 @@
   }
 }
 
-.reviews .container {
+.review .container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-.reviews__controls {
+.review__controls {
   display: flex;
   justify-content: space-between;
   width: 62px;
@@ -24,7 +24,7 @@
   margin-top: 0;
 }
 
-.reviews__label {
+.review__label {
   display: inline-block;
   vertical-align: top;
   width: 6px;
@@ -46,24 +46,24 @@
   }
 }
 
-input[type="radio"]:focus + .reviews__label {
+input[type="radio"]:focus + .review__label {
   opacity: 0.6;
   outline: none;
 }
 
-.reviews__toggle--1:checked ~ .reviews__controls [for="slide-1"] {
+.review__toggle--1:checked ~ .review__controls [for="slide-1"] {
   background-color: $main-bg-color;
   border: 3px solid $secondary-color;
   opacity: 1;
 }
 
-.reviews__toggle--2:checked ~ .reviews__controls [for="slide-2"] {
+.review__toggle--2:checked ~ .review__controls [for="slide-2"] {
   background-color: $main-bg-color;
   border: 3px solid $secondary-color;
   opacity: 1;
 }
 
-.reviews__toggle--3:checked ~ .reviews__controls [for="slide-3"] {
+.review__toggle--3:checked ~ .review__controls [for="slide-3"] {
   background-color: $main-bg-color;
   border: 3px solid $secondary-color;
   opacity: 1;
@@ -77,15 +77,15 @@ input[type="radio"]:focus + .reviews__label {
   margin: 2px 0 33px;
   text-align: center;
 
-  .reviews__toggle--1:checked ~ .reviews__slide--first {
+  .review__toggle--1:checked ~ .review__slide--first {
     display: flex;
   }
 
-  .reviews__toggle--2:checked ~ .reviews__slide--second {
+  .review__toggle--2:checked ~ .review__slide--second {
     display: flex;
   }
 
-  .reviews__toggle--3:checked ~ .reviews__slide--third {
+  .review__toggle--3:checked ~ .review__slide--third {
     display: flex;
   }
 }
@@ -143,6 +143,7 @@ input[type="radio"]:focus + .reviews__label {
     font-style: normal;
     font-size: 18px;
     line-height: 30px;
+    width: 620px;
     order: -1;
   }
 

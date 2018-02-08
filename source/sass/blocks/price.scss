@@ -1,7 +1,7 @@
 .price {
   background-color: $secondary-bg-color;
   overflow: hidden;
-  margin-bottom: 42px;
+  margin-bottom: 50px;
   padding-top: 131px;
   padding-bottom: 47px;
   background-image: url("../img/bg-triangle-white.svg");
@@ -151,7 +151,8 @@ input[type="radio"]:focus + .price__label {
 
   &--yes {
     background-image: url("../img/icon-yes.svg");
-    background-position: 225px 18px;
+    background-position-x: 235px;
+    background-position-y: 25px;
     background-repeat: no-repeat;
   }
 
@@ -176,8 +177,8 @@ input[type="radio"]:focus + .price__label {
 @media (min-width: $tablet-width) {
   .price {
     width: 100%;
-    padding-top: 107px;
-    padding-bottom: 68px;
+    padding-top: 115px;
+    padding-bottom: 60px;
     background-position: 0 -22px;
   }
 

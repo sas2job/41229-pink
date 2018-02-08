@@ -128,7 +128,7 @@
     &--index {
       width: 300px;
       padding-top: 100px;
-      padding-left: 20px;
+/*       padding-left: 20px; */
       padding-right: 340px;
     }
   }
@@ -141,10 +141,10 @@
 
   .intro--index .intro__title {
     display: block;
-    width: 200px;
+    width: 265px;
     margin-bottom: 31px;
     padding-top: 104px;
-    padding-left: 15px;
+    padding-left: 35px;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -192,7 +192,7 @@
     &--index {
       width: 600px;
       padding-top: 116px;
-      padding-left: 0;
+      padding-left: 110px;
     }
 
     &--form {
@@ -206,11 +206,14 @@
   }
 
   .intro--index .intro__title {
-    width: 250px;
+/*      width: 895px; */
+    /* width: 895px; */
+    width: 270px;
     margin-bottom: 52px;
-    padding-left: 25px;
+    padding-left: 30px;
     font-size: 50px;
     line-height: 60px;
+    /* text-align: center; */
   }
 
   .intro__btn {
@@ -219,6 +222,7 @@
 
   .intro__list {
     margin-bottom: 50px;
+    margin-left: 30px;
   }
 
   .intro__text {
