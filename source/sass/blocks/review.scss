@@ -77,17 +77,9 @@ input[type="radio"]:focus + .review__label {
   margin: 2px 0 33px;
   text-align: center;
 
-  .review__toggle--1:checked ~ .review__slide--first {
+  &:first-child {
     display: flex;
-  }
-
-  .review__toggle--2:checked ~ .review__slide--second {
-    display: flex;
-  }
-
-  .review__toggle--3:checked ~ .review__slide--third {
-    display: flex;
-  }
+    }
 }
 
 .review__author {

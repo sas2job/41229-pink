@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-.upload__wrapper {
+.container.upload__wrapper {
   margin-bottom: 42px;
 }
 
@@ -64,7 +64,7 @@
 
   &--mobile {
     display: block;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
   }
 
   &::before {
@@ -149,9 +149,9 @@
 /*--tablet mode--*/
 
 @media (min-width: $tablet-width) {
-  .upload__wrapper {
-    margin-bottom: 69px;
-  }
+  .container.upload__wrapper {
+    margin-bottom: 70px;
+}
 
   .upload__text {
     font-size: 18px;
