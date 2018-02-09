@@ -417,9 +417,9 @@ input[type="radio"]:checked .form__radio::before {
 
   .form__item--app .container {
     margin-top: -30px;
-    padding-top: 17px;
+    padding-top: 18px;
     padding-bottom: 33px;
-    padding-left: 59px;
+    padding-left: 80px;
     padding-right: 60px;
     box-sizing: border-box;
     border: 2px solid $border-color;
@@ -447,8 +447,8 @@ input[type="radio"]:checked .form__radio::before {
     flex-direction: column;
     margin-top: -10px;
     padding-top: 40px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
     box-sizing: border-box;
     border: 2px solid $border-color;
   }
@@ -526,10 +526,10 @@ input[type="radio"]:checked .form__radio::before {
   }
 
   .form__item--checkbox .container {
-    margin-top: -12px;
+    margin-top: -8px;
     padding-top: 52px;
     padding-bottom: 5px;
-    padding-left: 60px;
+    padding-left: 80px;
     padding-right: 60px;
     box-sizing: border-box;
     border: 2px solid $border-color;
@@ -551,6 +551,7 @@ input[type="radio"]:checked .form__radio::before {
 
   .form__item--textarea {
     order: 5;
+    padding-top: 37px;
     margin: 0 auto;
     margin-bottom: 27px;
   }
@@ -559,7 +560,7 @@ input[type="radio"]:checked .form__radio::before {
     margin-top: -27px;
     padding-top: 45px;
     padding-bottom: 41px;
-    padding-left: 60px;
+    padding-left: 78px;
     padding-right: 60px;
     box-sizing: border-box;
     border: 2px solid $border-color;

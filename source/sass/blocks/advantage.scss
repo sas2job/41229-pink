@@ -45,7 +45,9 @@
 @media (min-width: $tablet-width) {
   .advantage {
     background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, $secondary-bg-color 501px, $main-bg-color 501px);
-    background-position: 0 -26px, 0 0;
+    /* background-position: 0 -26px, 0 0; */
+    background-position-x: 0px, 0px;
+    background-position-y: 0px, 30px;
   }
 
   .advantage__list {
@@ -66,7 +68,7 @@
     display: block;
     width: 660px;
     margin: 0 auto;
-    padding-top: 55px;
+    padding-top: 80px;
     padding-right: 30px;
     padding-bottom: 67px;
     padding-left: 329px;
