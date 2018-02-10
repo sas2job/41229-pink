@@ -199,14 +199,33 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding-top: 22px;
+    padding-top: 12px;
+    padding-left: 13px;
   }
 
   .contacts__title {
     width: 500px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
     font-size: 50px;
     line-height: 60px;
+
+    &--phone {
+      font-size: 18px;
+      font-weight: 700;
+      width: 250px;
+    }
+
+    &--email {
+      font-size: 18px;
+      font-weight: 700;
+      width: 250px;
+    }
+
+    &--address {
+      font-size: 18px;
+      font-weight: 700;
+      width: 250px;
+    }
   }
 
   .contacts__list {
