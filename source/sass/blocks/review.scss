@@ -1,68 +1,221 @@
 .review {
-  min-height: 250px;
+  overflow: hidden;
+
+  &::after {
+    display: block;
+    top: 270px;
+    left: -360px;
+    z-index: 10;
+  }
+}
+
+.review .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.review__controls {
+  display: flex;
+  justify-content: space-between;
+  width: 62px;
+  order: 3;
+  margin-top: 0;
+}
+
+.review__label {
+  display: inline-block;
+  vertical-align: top;
+  width: 6px;
+  height: 6px;
+  background-color: $secondary-color;
+  opacity: 0.3;
+  border: 3px solid $main-bg-color;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+    outline: none;
+  }
+}
+
+input[type="radio"]:focus + .review__label {
+  opacity: 0.6;
+  outline: none;
+}
+
+.review__toggle--1:checked ~ .review__controls [for="slide-1"] {
+  background-color: $main-bg-color;
+  border: 3px solid $secondary-color;
+  opacity: 1;
+}
+
+.review__toggle--2:checked ~ .review__controls [for="slide-2"] {
+  background-color: $main-bg-color;
+  border: 3px solid $secondary-color;
+  opacity: 1;
+}
+
+.review__toggle--3:checked ~ .review__controls [for="slide-3"] {
+  background-color: $main-bg-color;
+  border: 3px solid $secondary-color;
+  opacity: 1;
 }
 
 .review__slide {
   display: none;
-  margin: 0;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 223px;
+  margin: 2px 0 33px;
   text-align: center;
 
-  .reviews__toggle--1:checked ~ .reviews__slide--first {
-    display: block;
-  }
-
-  .reviews__toggle--2:checked ~ .reviews__slide--second {
-    display: block;
-  }
-
-  .reviews__toggle--3:checked ~ .reviews__slide--third {
-    display: block;
-  }
+  &:first-child {
+    display: flex;
+    }
 }
 
-.reviews__author {
+.review__author {
   font-family: $font-open-sans;
   font-weight: 700;
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  order: 1;
 }
 
+.review__info {
+  display: none;
+}
+
+.review__text {
+  margin-top: 13px;
+  margin-bottom: 0;
+  order: 2;
+}
+
+.review__arrow {
+  display: none;
+}
 
 /*--tablet view--*/
 
 @media (min-width: $tablet-width) {
-  .reviews__toggle--1:checked ~ .reviews__slide--first {
+  .review__slide {
+    margin-bottom: 11px;
+  }
+
+  .review__toggle--1:checked ~ .review__slide--first {
     display: flex;
     flex-direction: column;
   }
 
-  .reviews__toggle--2:checked ~ .reviews__slide--second {
+  .review__toggle--2:checked ~ .review__slide--second {
     display: flex;
     flex-direction: column;
   }
 
-  .reviews__toggle--3:checked ~ .reviews__slide--third {
+  .review__toggle--3:checked ~ .review__slide--third {
     display: flex;
     flex-direction: column;
   }
 
-  .reviews__text {
+  .review__text {
+    margin-bottom: 35px;
+    font-family: $font-open-sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    width: 620px;
     order: -1;
+  }
+
+  .review__author {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .review__info {
+    margin-top: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    order: 1;
   }
 }
 
 /*--desktop mode--*/
 
 @media (min-width: $desktop-width) {
-  .reviews__slide {
-    width: 700px;
+  .review {
+    width: 960px;
+    position: relative;
     margin: 0 auto;
-    outline: 1px solid black;
+    padding-top: 134px;
   }
 
-  .reviews__text {
-    margin-bottom: 50px;
+  .review__controls {
+    display: none;
+  }
+
+  .review__slide {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .review__text {
+    margin-bottom: 35px;
+  }
+
+  .review__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .review__info {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__arrow {
+    position: absolute;
+    display: block;
+    top: 174px;
+    width: 21px;
+    height: 42px;
+    background-color: $secondary-color;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+
+    &--previous {
+      left: 10px;
+    }
+
+    &--next {
+      right: 10px;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.6;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.1;
+      outline: none;
+    }
   }
 }
