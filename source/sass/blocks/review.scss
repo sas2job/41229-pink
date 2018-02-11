@@ -79,7 +79,7 @@ input[type="radio"]:focus + .review__label {
 
   &:first-child {
     display: flex;
-    }
+  }
 }
 
 .review__author {
@@ -136,7 +136,6 @@ input[type="radio"]:focus + .review__label {
     font-style: normal;
     font-size: 18px;
     line-height: 30px;
-    width: 620px;
     order: -1;
   }
 

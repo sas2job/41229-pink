@@ -52,7 +52,7 @@
 
   &--contract {
     background-image: url("../img/icon-editor-contrast.svg");
-        background-position: 40% 45%;
+    background-position: 40% 45%;
   }
 }
 
@@ -153,7 +153,7 @@
 @media (min-width: $tablet-width) {
   .container.upload__wrapper {
     margin-bottom: 70px;
-}
+  }
 
   .upload__text {
     font-size: 18px;
