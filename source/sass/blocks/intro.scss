@@ -143,10 +143,10 @@
   }
 
   .intro__wrapper--index {
-    width: 300px;
+    width: 660px;
     padding-top: 100px;
     padding-left: 20px;
-    padding-right: 340px;
+    /*     padding-right: 340px; */
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: 50% 100%;
     background-repeat: no-repeat;
@@ -165,10 +165,10 @@
 
   .intro--index .intro__title {
     display: block;
-    width: 265px;
+    width: 230px;
     margin-bottom: 31px;
-    padding-top: 104px;
-    padding-left: 35px;
+    padding-top: 107px;
+    padding-left: 30px;
     font-size: 40px;
     line-height: 48px;
     text-align: center;
@@ -180,7 +180,7 @@
 
   .intro__list {
     width: 240px;
-    margin-left: 28px;
+    margin-left: 10px;
     margin-bottom: 30px;
   }
 
@@ -219,7 +219,7 @@
   }
 
   .intro__wrapper--index {
-    width: 600px;
+    width: 960px;
     padding-top: 116px;
     padding-left: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");

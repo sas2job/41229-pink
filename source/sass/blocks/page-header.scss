@@ -18,14 +18,42 @@
   width: 80px;
   height: 25px;
   outline: none;
+
+  &:hover .page-header__icon {
+    fill: $main-color;
+  }
+
+  &:focus .page-header__icon {
+    fill: $main-color;
+  }
+
+  &:active .page-header__icon {
+    fill: $main-bg-color;
+    opacity: 0.3;
+  }
 }
 
 .page-header__menu--opened .page-header__logo {
-  padding: 22px 20px;
+  padding: 23px 20px;
 }
 
 .page-header__menu--closed .page-header__logo {
-  padding: 20px;
+  padding-top: 23px;
+  padding-right: 21px;
+  padding-bottom: 40px;
+  padding-left: 21px;
+}
+
+.page-header__icon {
+  fill: $main-bg-color;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 /*--tablet mode--*/
@@ -36,7 +64,20 @@
   }
 
   .page-header__menu .page-header__logo {
-    padding: 42px 20px;
+    width: 147px;
+    height: 42px;
+    padding-top: 27px;
+    padding-bottom: 82px;
+  }
+
+  .page-header__icon {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
   }
 }
 
@@ -74,5 +115,15 @@
 
   .page-header__menu .page-header__logo {
     padding-left: 0;
+  }
+
+  .page-header__icon {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
