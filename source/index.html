@@ -5,7 +5,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк - главная</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+
     <script>
       document.createElement("picture");
     </script>
@@ -14,6 +16,9 @@
     <script src="js/objectFitPolyfill.basic.js"></script>
   </head>
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <!-- Navigation begin-->
 
@@ -89,20 +94,22 @@
         <h2 class="information__title">Нам есть, что вам предложить!</h2>
       </div>
       <div class="advantage">
-        <ul class="advantage__list  container">
-          <li class="advantage__item advantage__item--mood">
-            <h3 class="advantage__title">Поднимает настроение</h3>
-            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantage__item advantage__item--world">
-            <h3 class="advantage__title">Меняет мир вокруг</h3>
-            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantage__item advantage__item--friends">
-            <h3 class="advantage__title">Заводит новых друзей</h3>
-            <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="advantage__list">
+            <li class="advantage__item advantage__item--mood">
+              <h3 class="advantage__title">Поднимает настроение</h3>
+              <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantage__item advantage__item--world">
+              <h3 class="advantage__title">Меняет мир вокруг</h3>
+              <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantage__item advantage__item--friends">
+              <h3 class="advantage__title">Заводит новых друзей</h3>
+              <p class="advantage__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
         <div class="advantage__effect">
           <h3 class="advantage__title  advantage__title--effect">Эффект на&nbsp;24 часа!</h3>
           <p class="advantage__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -123,21 +130,23 @@
           <label class="review__label" for="slide-2"></label>
           <label class="review__label" for="slide-3"></label>
         </div>
-        <blockquote class="review__slide  review__slide--first">
-          <cite class="review__author">Николай Петров</cite>
-          <p class="review__info">25 лет, водитель трамвая</p>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
-        <blockquote class="review__slide  review__slide--second">
-          <cite class="review__author">Николай Иванов</cite>
-          <p class="review__info">35 лет, машинист поезда </p>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
-        <blockquote class="review__slide  review__slide--third">
-          <cite class="review__author">Николай Сидоров</cite>
-          <p class="review__info">45 лет, пилот самолёта</p>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+        <div review__wrapper>
+          <blockquote class="review__slide  review__slide--first">
+            <cite class="review__author">Николай Петров</cite>
+            <p class="review__info">25 лет, водитель трамвая</p>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="review__slide  review__slide--second">
+            <cite class="review__author">Николай Иванов</cite>
+            <p class="review__info">35 лет, машинист поезда </p>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="review__slide  review__slide--third">
+            <cite class="review__author">Николай Сидоров</cite>
+            <p class="review__info">45 лет, пилот самолёта</p>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
         <button class="review__arrow  review__arrow--previous" type="button">
           <span class="visually-hidden">Предыдущий</span>
         </button>
@@ -243,8 +252,7 @@
           </li>
         </ul>
       </div>
-      <div class="contacts__map">
-        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1153.9413774477023!2d30.3207760384427!3d59.93631663233066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506092349588 "width="320" height="219" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+      <div class="contacts__map" id="map">
       </div>
     </section>
     <!-- Contacts end -->
@@ -255,29 +263,29 @@
   <footer class="page-footer page-footer--index">
     <a class="page-footer__logo">
       <svg class="page-footer__icon  page-footer__icon--mobile" width="146.3" height="40.375" title="Логотип Pink">
-        <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+        <use xlink:href="#logo-pink-blue-mobile"></use>
       </svg>
       <svg class="page-footer__icon  page-footer__icon--desktop" width="146.3" height="40.375" title="Логотип Pink">
-        <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+        <use xlink:href="#logo-pink-blue-desktop"></use>
       </svg>
     </a>
     <div class="page-footer__social  social">
       <a class="social__item social__item--tw" href="https://twitter.com/htmlacademy_ru" title="Twitter">
         <span class="visually-hidden">Twitter</span>
         <svg class="social__icon" width="17.5" height="14.663">
-          <use xlink:href="img/sprite.svg#icon-twitter"></use>
+          <use xlink:href="#icon-twitter"></use>
         </svg>
       </a>
       <a class="social__item social__item--fb" href="https://www.facebook.com/htmlacademy" title="Facebook">
         <span class="visually-hidden">Facebook</span>
         <svg class="social__icon" width="8.673" height="18.944">
-          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+          <use xlink:href="#icon-facebook"></use>
         </svg>
       </a>
       <a class="social__item social__item--yt" href="https://www.youtube.com/htmlacademyru" title="Youtube">
         <span class="visually-hidden">Youtube</span>
         <svg class="social__icon" width="14.64" height="13.96">
-          <use xlink:href="img/sprite.svg#icon-youtube"></use>
+          <use xlink:href="#icon-youtube"></use>
         </svg>
       </a>
     </div>
@@ -285,12 +293,13 @@
       <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" title="Разработано HTML Academy">
         <span class="page-footer__note">Разработано</span>
         <svg class="page-footer__academy" width="26.943" height="34.09">
-          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+          <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>
       </div>
   </footer>
   <!-- Footer end -->
-  <script src="js/menu.js"></script>
+  <script src="js/map.min.js"></script>
+  <script src="js/menu.min.js"></script>
 </body>
 </html>

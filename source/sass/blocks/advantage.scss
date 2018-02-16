@@ -8,13 +8,15 @@
 }
 
 .advantage__list {
-  padding-top: 70px;
+  padding-top: 52px;
   padding-bottom: 287px;
   list-style: none;
   text-align: center;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 50% 109%;
   background-repeat: no-repeat;
+  padding-left: 0;
+  margin-bottom: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
@@ -60,8 +62,9 @@
     padding-bottom: 6px;
     text-align: left;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: 21px 20px;
+    background-position: 0 50px;
     background-repeat: no-repeat;
+    margin-top: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
@@ -144,8 +147,6 @@
     text-align: center;
     background-image: none;
     padding-top: 44px;
-    padding-left: 10px;
-    padding-right: 10px;
     box-sizing: border-box;
   }
 

@@ -17,7 +17,8 @@
 @media (min-width: $tablet-width) {
   .information__wrapper {
     width: 660px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin-bottom: 0;
   }
 
   .information__title {
@@ -37,6 +38,7 @@
 @media (min-width: $desktop-width) {
   .information__wrapper {
     min-width: 940px;
+    margin-bottom: 30px;
   }
 
   .information__title {

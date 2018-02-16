@@ -237,7 +237,7 @@ input[type="checkbox"]:focus + .form__checkbox::before {
   border: 2px solid $secondary-color;
 }
 
-input[type="checkbox"]:checked .form__checkbox::before {
+input[type="checkbox"]:checked + .form__checkbox::before {
   background-image: url("../img/icon-yes.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -285,7 +285,7 @@ input[type="radio"]:focus + .form__radio::before {
   border: 2px solid $secondary-color;
 }
 
-input[type="radio"]:checked .form__radio::before {
+input[type="radio"]:checked + .form__radio::before {
   background-image: url("../img/icon-map-marker.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -677,6 +677,7 @@ input[type="radio"]:checked .form__radio::before {
 
   .form__item--contacts {
     margin-bottom: 0;
+    padding-top: 55px;
   }
 
   .form__item--contacts .container {

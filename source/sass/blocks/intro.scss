@@ -140,6 +140,8 @@
   .intro__wrapper {
     width: 490px;
     padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .intro__wrapper--index {
@@ -212,17 +214,18 @@
     padding-top: 45px;
 
     &--form {
-      width: 750px;
+      width: 790px;
     }
   }
 
   .intro__wrapper--index {
     width: 960px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 25px 100%;
+    background-repeat: no-repeat;
     padding-top: 116px;
     padding-left: 0;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 16px 100%;
-    background-repeat: no-repeat;
+    margin: 0 auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
