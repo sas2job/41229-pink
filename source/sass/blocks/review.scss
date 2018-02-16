@@ -76,10 +76,10 @@ input[type="radio"]:focus + .review__label {
   min-height: 223px;
   margin: 2px 0 33px;
   text-align: center;
+}
 
-  &:first-child {
-    display: flex;
-  }
+.review__slide:first-child {
+  display: flex;
 }
 
 .review__author {
@@ -92,7 +92,7 @@ input[type="radio"]:focus + .review__label {
   order: 1;
 }
 
-.review__info {
+ .review__info {
   display: none;
 }
 

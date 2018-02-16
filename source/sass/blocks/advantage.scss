@@ -8,13 +8,15 @@
 }
 
 .advantage__list {
-  padding-top: 70px;
+  padding-top: 52px;
   padding-bottom: 287px;
   list-style: none;
   text-align: center;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: 50% 109%;
   background-repeat: no-repeat;
+  padding-left: 0;
+  margin-bottom: 0;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/iphone-screen-mobile@2x.png");
