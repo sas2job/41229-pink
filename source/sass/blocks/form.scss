@@ -465,11 +465,12 @@ input[type="radio"]:checked:disabled + .form__radio {
     margin-top: -30px;
     padding-top: 18px;
     padding-bottom: 33px;
-    padding-left: 80px;
+    padding-left: 58px;
     padding-right: 60px;
     box-sizing: border-box;
     border: 2px solid $border-color;
     border-radius: 2px;
+    width: 94%;
   }
 
   .form__item--app .form__title {
@@ -494,11 +495,12 @@ input[type="radio"]:checked:disabled + .form__radio {
     flex-direction: column;
     margin-top: -10px;
     padding-top: 40px;
-    padding-left: 80px;
+    padding-left: 60px;
     padding-right: 80px;
     box-sizing: border-box;
     border: 2px solid $border-color;
     border-radius: 2px;
+    width: 94%
   }
 
   .form__item--contacts .form__title {
@@ -541,7 +543,7 @@ input[type="radio"]:checked:disabled + .form__radio {
       position: absolute;
       display: block;
       top: 7px;
-      right: -2px;
+      right: -22px;
       width: 62px;
       height: 58px;
       padding-top: 16px;
@@ -583,7 +585,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     margin-top: -10px;
     padding-top: 52px;
     padding-bottom: 5px;
-    padding-left: 60px;
+    padding-left: 78px;
     padding-right: 60px;
     box-sizing: border-box;
     border: 2px solid $border-color;
@@ -620,6 +622,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     box-sizing: border-box;
     border: 2px solid $border-color;
     border-radius: 2px;
+    width: 100%
   }
 
   .form__item--textarea .form__title {
@@ -725,6 +728,8 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-top: 38px;
     padding-left: 57px;
     padding-bottom: 12px;
+    padding-right: 60px;
+    width: 100%
   }
 
   .form__item--contacts .form__title {
@@ -753,6 +758,7 @@ input[type="radio"]:checked:disabled + .form__radio {
 
   .form__item--checkbox {
     padding-top: 38px;
+    width: 100%;
   }
 
   .form__item--checkbox .container {
@@ -764,6 +770,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-bottom: 12px;
     padding-left: 57px;
     padding-right: 8px;
+    width: 940px;
   }
 
   .form__field--checkbox {
@@ -803,6 +810,7 @@ input[type="radio"]:checked:disabled + .form__radio {
   .form__item--textarea {
     min-height: auto;
     margin-bottom: 25px;
+    width: 100%;
   }
 
   .form__item--textarea .container {
@@ -835,5 +843,8 @@ input[type="radio"]:checked:disabled + .form__radio {
     &--desktop {
       display: inline;
     }
+  }
+  .social {
+    margin-left: 33px;
   }
 }
