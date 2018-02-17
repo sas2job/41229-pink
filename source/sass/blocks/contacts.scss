@@ -234,23 +234,28 @@
     margin-bottom: 35px;
     font-size: 50px;
     line-height: 60px;
+    margin-bottom: 0;
+
 
     &--phone {
       font-size: 18px;
       font-weight: 700;
       width: 250px;
+      margin-left: 10px;
     }
 
     &--email {
       font-size: 18px;
       font-weight: 700;
       width: 250px;
+      margin-left: 10px;
     }
 
     &--address {
       font-size: 18px;
       font-weight: 700;
       width: 250px;
+      margin-left: 10px;
     }
   }
 
