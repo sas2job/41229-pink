@@ -172,13 +172,14 @@
   }
 
   .advantage__item--mood {
-    width: 240px;
+    width: 270px;
     margin-left: 0;
-    padding-top: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
-    background-position: 50% 0%;
+    /* background-position: 50% -2%; */
+    background-position: 25% -2%;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -188,13 +189,14 @@
   }
 
   .advantage__item--world {
-    width: 240px;
+    width: 270px;
     margin-left: 0;
-    padding-top: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
-    background-position: 25% 0%;
+    /* background-position: 25% -2%; */
+    background-position: 40% -2%;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -204,13 +206,14 @@
   }
 
   .advantage__item--friends {
-    width: 240px;
+    width: 270px;
     margin-left: 0;
-    padding-top: 360px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 350px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
-    background-position: 25% 0%;
+    /* background-position: 25% -2%; */
+    background-position: 60% -2%;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -234,14 +237,14 @@
   .advantage__effect {
     width: 940px;
     padding-left: 365px;
-    padding-top: 30px;
+    padding-top: 75px;
     padding-bottom: 110px;
     padding-right: 45px;
 
     &::before {
       width: 300px;
       height: 350px;
-      top: -10px;
+      top: -21px;
       left: 0;
       padding-top: 98px;
       font-size: 120px;
