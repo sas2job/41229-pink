@@ -47,7 +47,7 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
- }
+}
 
 .advantage__text {
   font-family: $font-open-sans;
@@ -164,7 +164,7 @@
     justify-content: space-between;
     text-align: center;
     background-image: none;
-    padding-top: 37px;
+    padding-top: 35px;
     padding-left: 15px;
     padding-right: 15px;
     box-sizing: border-box;
@@ -174,12 +174,14 @@
   .advantage__item--mood {
     width: 270px;
     margin-left: 0;
-    padding-top: 350px;
+    /* padding-top: 0; */
+    padding-top: 360px;
     padding-left: 15px;
     padding-right: 15px;
     background-image: url("../img/iphone-screen-1-desktop@1x.png");
     /* background-position: 50% -2%; */
-    background-position: 45% -2%;
+    /* background-position: 45% -2%; */
+    background-position: center top;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -191,12 +193,14 @@
   .advantage__item--world {
     width: 270px;
     margin-left: 0;
-    padding-top: 350px;
+    padding-top: 360px;
+    /* padding-top: 0; */
     padding-left: 15px;
     padding-right: 15px;
     background-image: url("../img/iphone-screen-2-desktop@1x.png");
     /* background-position: 25% -2%; */
-    background-position: 40% -2%;
+    /* background-position: 40% -2%; */
+    background-position: center top;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -208,12 +212,14 @@
   .advantage__item--friends {
     width: 270px;
     margin-left: 0;
-    padding-top: 350px;
+    padding-top: 360px;
+    /* padding-top: 0; */
     padding-left: 15px;
     padding-right: 15px;
     background-image: url("../img/iphone-screen-3-desktop@1x.png");
     /* background-position: 25% -2%; */
-    background-position: 60% -2%;
+    /* background-position: 60% -2%; */
+    background-position: center top;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

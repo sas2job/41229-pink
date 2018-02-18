@@ -10,7 +10,7 @@
     position: absolute;
     display: block;
     top: 0;
-    left: 50%;
+    right: 20px;
     width: 140px;
     height: 36px;
     padding: 6px 19px;
@@ -134,7 +134,7 @@
 
   .photo-post__item--panorama::before {
     top: 56px;
-    left: 75.8%;
+    right: 20px;
   }
 
   .photo-post__link {
@@ -225,7 +225,7 @@
 
   .photo-post__item--panorama::before {
     top: 55px;
-    left: 77.5%;
+    right: 130px;
   }
 
   .photo-post__link {
