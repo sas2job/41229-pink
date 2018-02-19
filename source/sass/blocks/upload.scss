@@ -40,6 +40,7 @@
   border: none;
   background-color: transparent;
   margin-bottom: 37px;
+  margin-left: 4px;
   outline: none;
 
   &:hover .upload__icon {
@@ -125,9 +126,9 @@
 
 .upload__btn {
   background-color: transparent;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 13px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
   cursor: pointer;
 
   &--post {

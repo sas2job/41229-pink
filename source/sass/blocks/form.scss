@@ -583,9 +583,10 @@ input[type="radio"]:checked:disabled + .form__radio {
 
   .form__item--checkbox .container {
     margin-top: -10px;
+    margin-left: 20px;
     padding-top: 52px;
     padding-bottom: 5px;
-    padding-left: 78px;
+    padding-left: 58px;
     padding-right: 60px;
     box-sizing: border-box;
     border: 2px solid $border-color;
