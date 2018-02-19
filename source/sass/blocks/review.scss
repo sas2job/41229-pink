@@ -19,7 +19,7 @@
 .review__controls {
   display: flex;
   justify-content: space-between;
-  width: 62px;
+  width: 65px;
   order: 3;
   margin-top: 0;
 }
@@ -27,8 +27,8 @@
 .review__label {
   display: inline-block;
   vertical-align: top;
-  width: 6px;
-  height: 6px;
+  width: 13px;
+  height: 13px;
   background-color: $secondary-color;
   opacity: 0.3;
   border: 3px solid $main-bg-color;
