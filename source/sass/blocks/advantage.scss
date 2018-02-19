@@ -69,7 +69,7 @@
 @media (min-width: $tablet-width) {
   .advantage {
 
-    background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, $secondary-bg-color 485px, $main-bg-color 485px);
+    background-image: url("../img/bg-triangle-white.svg"), linear-gradient(to bottom, $secondary-bg-color 500px, $main-bg-color 485px);
     background-position: 50% 0%, 0% 0%;
     background-repeat: no-repeat, no-repeat;
     background-size: 100% auto, 100% auto;
