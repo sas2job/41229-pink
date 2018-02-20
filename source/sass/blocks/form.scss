@@ -407,6 +407,7 @@ input[type="radio"]:checked:disabled + .form__radio {
   .form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 8px;
   }
 
   .form__title {
