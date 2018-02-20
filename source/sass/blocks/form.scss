@@ -407,6 +407,7 @@ input[type="radio"]:checked:disabled + .form__radio {
   .form {
     display: flex;
     flex-direction: column;
+    margin-bottom: 8px;
   }
 
   .form__title {
@@ -419,6 +420,15 @@ input[type="radio"]:checked:disabled + .form__radio {
 
   .form__text {
     margin-left: 0;
+  }
+
+  .form__item--border {
+    width: 620px;
+    box-sizing: border-box;
+    border: 2px solid $border-color;
+    border-radius: 2px;
+    margin: 0 auto;
+
   }
 
   .form__item--full-name {
@@ -467,10 +477,9 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-bottom: 33px;
     padding-left: 58px;
     padding-right: 60px;
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     border: 2px solid $border-color;
-    border-radius: 2px;
-    width: 94%;
+    border-radius: 2px; */
   }
 
   .form__item--app .form__title {
@@ -497,10 +506,9 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 80px;
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     border: 2px solid $border-color;
-    border-radius: 2px;
-    width: 94%
+    border-radius: 2px; */
   }
 
   .form__item--contacts .form__title {
@@ -583,13 +591,14 @@ input[type="radio"]:checked:disabled + .form__radio {
 
   .form__item--checkbox .container {
     margin-top: -10px;
+    // margin-left: 20px;
     padding-top: 52px;
     padding-bottom: 5px;
-    padding-left: 78px;
+    padding-left: 58px;
     padding-right: 60px;
-    box-sizing: border-box;
-    border: 2px solid $border-color;
-    border-radius: 2px;
+    // box-sizing: border-box;
+    // border: 2px solid $border-color;
+    // border-radius: 2px;
   }
 
   .form__item--checkbox .form__title {
@@ -619,10 +628,9 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-bottom: 41px;
     padding-left: 60px;
     padding-right: 60px;
-    box-sizing: border-box;
-    border: 2px solid $border-color;
-    border-radius: 2px;
-    width: 100%
+    // box-sizing: border-box;
+    // border: 2px solid $border-color;
+    // border-radius: 2px;
   }
 
   .form__item--textarea .form__title {
@@ -676,6 +684,9 @@ input[type="radio"]:checked:disabled + .form__radio {
     box-sizing: border-box;
   }
 
+  .form__item--border {
+    width: 940px;
+  }
   .form__item--full-name {
     margin-bottom: 0;
   }
@@ -771,6 +782,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-left: 57px;
     padding-right: 8px;
     width: 940px;
+    margin-left: 0;
   }
 
   .form__field--checkbox {

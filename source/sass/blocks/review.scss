@@ -9,6 +9,10 @@
   }
 }
 
+.review__wrapper {
+  margin-top: 15px;
+}
+
 .review .container {
   display: flex;
   flex-direction: column;
@@ -19,7 +23,7 @@
 .review__controls {
   display: flex;
   justify-content: space-between;
-  width: 62px;
+  width: 65px;
   order: 3;
   margin-top: 0;
 }
@@ -27,8 +31,8 @@
 .review__label {
   display: inline-block;
   vertical-align: top;
-  width: 6px;
-  height: 6px;
+  width: 13px;
+  height: 13px;
   background-color: $secondary-color;
   opacity: 0.3;
   border: 3px solid $main-bg-color;
@@ -92,7 +96,7 @@ input[type="radio"]:focus + .review__label {
   order: 1;
 }
 
- .review__info {
+.review__info {
   display: none;
 }
 
@@ -184,6 +188,7 @@ input[type="radio"]:focus + .review__label {
   .review__text {
     width: 700px;
     margin-bottom: 35px;
+    margin-top: 0;
   }
 
   .review__author {

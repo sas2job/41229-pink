@@ -91,6 +91,10 @@
     margin: 0 auto;
   }
 
+  .page-footer__photo {
+    padding-top: 35px;
+  }
+
   .page-footer__logo {
     margin-top: 0;
     margin-left: 0;
@@ -108,8 +112,12 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 940px;
-    padding-top: 66px;
+    padding-top: 45px;
     padding-bottom: 72px;
+  }
+
+  .page-footer__photo {
+    padding-top: 65px;
   }
 
   .page-footer__logo {

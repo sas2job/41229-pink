@@ -188,6 +188,10 @@
     padding-right: 0;
     padding-left: 80px;
     border: none;
+
+    &:first-child {
+      box-shadow: none;
+    }
   }
 
   .main-nav__link {

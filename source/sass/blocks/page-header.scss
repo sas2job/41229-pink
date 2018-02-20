@@ -3,6 +3,7 @@
   position: relative;
   z-index: 5;
   margin-bottom: -66px;
+  background-color: rgba(0,0,0,.3);
 
   &--opened {
     background-color: $secondary-color;
@@ -64,6 +65,7 @@
 @media (min-width: $tablet-width) {
   .page-header__menu {
     margin-bottom: -111px;
+    // background-color: rgba(0,0,0,.3);
   }
 
   .page-header__menu .page-header__logo {
