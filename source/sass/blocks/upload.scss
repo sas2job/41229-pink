@@ -326,7 +326,7 @@
   }
 
   .upload__controls {
-    margin-left: 2px;
+    margin-left: -5px;
     margin-bottom: 48px;
     padding: 0;
     width: 380px;
@@ -342,34 +342,42 @@
     padding: 0;
 
     &--crop {
-      width: 48px;
-      height: 48px;
-      padding-top: 3px;
-      padding-right: 2px;
+      width: 45px;
+      height: 45px;
+      // padding-top: 3px;
     }
 
     &--fill {
-      width: 48px;
-      height: 48px;
+      width: 45px;
+      height: 45px;
       padding-top: 5px;
     }
 
     &--contract {
       width: 32px;
       height: 32px;
-      padding-right: 6px;
+      // padding-right: 6px;
     }
   }
 
   .upload__range {
-    width: 288px;
+    width: 280px;
     margin-right: 0;
     margin-left: 10px;
+    margin-top: 23px;
 
     &::after {
       left: -90px;
       width: 410px;
     }
+  }
+
+  .upload__range--crop {
+    margin-top: 23px;
+  }
+
+  .upload__range--contract {
+    margin-top: 20px;
   }
 
   .upload__range--crop::before {
