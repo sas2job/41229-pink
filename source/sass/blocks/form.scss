@@ -676,6 +676,7 @@ input[type="radio"]:checked:disabled + .form__radio {
   .form__item--border {
     width: 100%;
   }
+
   .form__item--full-name {
     margin-bottom: 0;
   }
@@ -730,7 +731,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-left: 57px;
     padding-bottom: 12px;
     padding-right: 60px;
-    width: 100%
+    width: 100%;
   }
 
   .form__item--contacts .form__title {
@@ -742,11 +743,10 @@ input[type="radio"]:checked:disabled + .form__radio {
     width: 60px;
   }
 
-  .form__item--contacts .form__field--email {
-
-    &::after {
-    }
-  }
+  // .form__item--contacts .form__field--email {
+  //   &::after {
+  //   }
+  // }
 
   .form__item--contacts input[type="tel"] {
     min-width: 375px;
@@ -854,6 +854,7 @@ input[type="radio"]:checked:disabled + .form__radio {
       display: inline;
     }
   }
+
   .social {
     margin-left: 33px;
   }
