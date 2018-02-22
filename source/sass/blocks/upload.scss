@@ -348,9 +348,9 @@
     }
 
     &--fill {
-      width: 45px;
-      height: 45px;
-      padding-top: 5px;
+      width: 50px;
+      height: 50px;
+      // padding-top: 5px;
     }
 
     &--contract {
@@ -361,8 +361,8 @@
   }
 
   .upload__range {
-    width: 280px;
-    margin-right: 0;
+    width: 285px;
+    margin-right: -5px;
     margin-left: 10px;
     margin-top: 23px;
 
@@ -398,10 +398,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
+    min-height: 52px;
     width: 185px;
     margin-top: 85px;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 16px;
 
     &--post {
       margin-right: 38px;
