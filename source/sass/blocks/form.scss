@@ -514,6 +514,19 @@ input[type="radio"]:checked:disabled + .form__radio {
     background-color: $main-bg-color;
   }
 
+  .form__field--contacts .form__field--icon::after {
+    position: absolute;
+    display: block;
+    top: 7px;
+    width: 62px;
+    height: 58px;
+    left: 436px;
+    padding-top: 19px;
+    padding-left: 22px;
+    box-sizing: content-box;
+    background-color: #e5e5e5;
+  }
+
   .form__item--contacts .form__field--phone {
     position: relative;
     display: flex;
@@ -524,12 +537,12 @@ input[type="radio"]:checked:disabled + .form__radio {
       position: absolute;
       display: block;
       top: 7px;
+      width: 39px;
+      height: 39px;
       left: 436px;
-      width: 62px;
-      height: 58px;
       padding-top: 19px;
       padding-left: 22px;
-      box-sizing: border-box;
+      box-sizing: content-box;
       background-color: #e5e5e5;
     }
   }
@@ -544,13 +557,12 @@ input[type="radio"]:checked:disabled + .form__radio {
       position: absolute;
       display: block;
       top: 7px;
-      right: 2px;
-      // right: -22px;
-      width: 62px;
-      height: 58px;
-      padding-top: 16px;
+      width: 40px;
+      height: 40px;
+      left: 436px;
+      padding-top: 19px;
       padding-left: 22px;
-      box-sizing: border-box;
+      box-sizing: content-box;
       background-color: #e5e5e5;
     }
   }
@@ -740,8 +752,9 @@ input[type="radio"]:checked:disabled + .form__radio {
   }
 
   .form__item--contacts .form__field::after {
-    left: 313px;
-    width: 60px;
+    left: 312px;
+    width: 39px;
+    height: 39px;
   }
 
   // .form__item--contacts .form__field--email {
