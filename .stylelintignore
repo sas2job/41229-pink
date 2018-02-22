@@ -1,0 +1,2 @@
+ # перечисление игнорируемых stylelint-ом файлов
+  source/js/picturefill.js
