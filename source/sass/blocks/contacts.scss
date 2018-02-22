@@ -15,22 +15,25 @@
 .contacts__title {
   margin-bottom: 28px;
   font-family: $font-open-sans;
-  font-weight: 400;
-  font-size: 23px;
+  font-weight: 200;
+  font-size: 24px;
   line-height: 30px;
 
   &--phone {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0;
   }
 
   &--email {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0;
   }
 
   &--address {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0;
   }
 }
@@ -146,7 +149,8 @@
 
   .contacts__title {
     width: 380px;
-    font-size: 39px;
+    font-size: 40px;
+    font-weight: 200;
     line-height: 48px;
     margin-top: 0;
     margin-right: auto;
@@ -231,7 +235,7 @@
 
   .contacts__title {
     width: 500px;
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
     font-weight: 200;
     font-size: 50px;
     line-height: 60px;

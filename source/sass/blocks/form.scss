@@ -422,13 +422,10 @@ input[type="radio"]:checked:disabled + .form__radio {
     margin-left: 0;
   }
 
-  .form__item--border {
-    width: 620px;
+  .form__item--border .container {
     box-sizing: border-box;
     border: 2px solid $border-color;
     border-radius: 2px;
-    margin: 0 auto;
-
   }
 
   .form__item--full-name {
@@ -477,9 +474,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-bottom: 33px;
     padding-left: 58px;
     padding-right: 60px;
-    /* box-sizing: border-box;
-    border: 2px solid $border-color;
-    border-radius: 2px; */
+    width: 620px;
   }
 
   .form__item--app .form__title {
@@ -506,9 +501,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-top: 40px;
     padding-left: 60px;
     padding-right: 80px;
-    /* box-sizing: border-box;
-    border: 2px solid $border-color;
-    border-radius: 2px; */
+    width: 621px;
   }
 
   .form__item--contacts .form__title {
@@ -521,6 +514,19 @@ input[type="radio"]:checked:disabled + .form__radio {
     background-color: $main-bg-color;
   }
 
+  .form__field--contacts .form__field--icon::after {
+    position: absolute;
+    display: block;
+    top: 7px;
+    width: 62px;
+    height: 58px;
+    left: 436px;
+    padding-top: 19px;
+    padding-left: 22px;
+    box-sizing: content-box;
+    background-color: #e5e5e5;
+  }
+
   .form__item--contacts .form__field--phone {
     position: relative;
     display: flex;
@@ -531,12 +537,12 @@ input[type="radio"]:checked:disabled + .form__radio {
       position: absolute;
       display: block;
       top: 7px;
+      width: 39px;
+      height: 39px;
       left: 436px;
-      width: 62px;
-      height: 58px;
       padding-top: 19px;
       padding-left: 22px;
-      box-sizing: border-box;
+      box-sizing: content-box;
       background-color: #e5e5e5;
     }
   }
@@ -551,12 +557,12 @@ input[type="radio"]:checked:disabled + .form__radio {
       position: absolute;
       display: block;
       top: 7px;
-      right: -22px;
-      width: 62px;
-      height: 58px;
-      padding-top: 16px;
+      width: 40px;
+      height: 40px;
+      left: 436px;
+      padding-top: 19px;
       padding-left: 22px;
-      box-sizing: border-box;
+      box-sizing: content-box;
       background-color: #e5e5e5;
     }
   }
@@ -596,9 +602,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-bottom: 5px;
     padding-left: 58px;
     padding-right: 60px;
-    // box-sizing: border-box;
-    // border: 2px solid $border-color;
-    // border-radius: 2px;
+    width: 620px;
   }
 
   .form__item--checkbox .form__title {
@@ -628,9 +632,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-bottom: 41px;
     padding-left: 60px;
     padding-right: 60px;
-    // box-sizing: border-box;
-    // border: 2px solid $border-color;
-    // border-radius: 2px;
+    width: 623px;
   }
 
   .form__item--textarea .form__title {
@@ -685,8 +687,9 @@ input[type="radio"]:checked:disabled + .form__radio {
   }
 
   .form__item--border {
-    width: 940px;
+    width: 100%;
   }
+
   .form__item--full-name {
     margin-bottom: 0;
   }
@@ -718,14 +721,15 @@ input[type="radio"]:checked:disabled + .form__radio {
   }
 
   .form__item--app {
+    width: 436px;
     margin-bottom: 27px;
     padding: 0;
   }
 
   .form__item--app .container {
-    width: 436px;
     padding-top: 20px;
     padding-left: 75px;
+    width: 436px;
   }
 
   .form__item--contacts {
@@ -740,7 +744,7 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-left: 57px;
     padding-bottom: 12px;
     padding-right: 60px;
-    width: 100%
+    width: 100%;
   }
 
   .form__item--contacts .form__title {
@@ -748,9 +752,15 @@ input[type="radio"]:checked:disabled + .form__radio {
   }
 
   .form__item--contacts .form__field::after {
-    left: 313px;
-    width: 60px;
+    left: 312px;
+    width: 39px;
+    height: 39px;
   }
+
+  // .form__item--contacts .form__field--email {
+  //   &::after {
+  //   }
+  // }
 
   .form__item--contacts input[type="tel"] {
     min-width: 375px;
@@ -817,6 +827,7 @@ input[type="radio"]:checked:disabled + .form__radio {
 
   .form__checkbox {
     padding-left: 60px;
+    width: 260px;
   }
 
   .form__item--textarea {
@@ -830,12 +841,13 @@ input[type="radio"]:checked:disabled + .form__radio {
     padding-top: 42px;
     padding-left: 58px;
     padding-bottom: 33px;
+    width: 940px;
   }
 
   .form__textarea {
-    width: 820px;
     height: 128px;
     padding-left: 18px;
+    width: 100%;
   }
 
   .form__inner {
@@ -856,6 +868,7 @@ input[type="radio"]:checked:disabled + .form__radio {
       display: inline;
     }
   }
+
   .social {
     margin-left: 33px;
   }

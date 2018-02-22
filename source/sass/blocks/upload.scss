@@ -39,8 +39,11 @@
   height: 50px;
   border: none;
   background-color: transparent;
-  margin-bottom: 37px;
+  // margin-bottom: 37px;
+  // margin-left: 4px;
+  margin-bottom: 35px;
   margin-left: 4px;
+  margin-top: 3px;
   outline: none;
 
   &:hover .upload__icon {
@@ -215,9 +218,11 @@
     flex-wrap: wrap;
     margin-bottom: 54px;
     padding: 0;
+    margin-left: 10px;
   }
 
   .upload__toggle {
+    margin-top: 0;
     margin-bottom: 23px;
   }
 
@@ -234,7 +239,7 @@
 
     &--fill {
       width: 26px;
-      height: 26px;
+      height: 35px;
       padding-top: 11px;
     }
 
@@ -247,7 +252,7 @@
 
   .upload__range {
     display: block;
-    width: 202px;
+    width: 197px;
     height: 2px;
     margin-top: 26px;
     margin-bottom: 20px;
@@ -321,7 +326,7 @@
   }
 
   .upload__controls {
-    margin-left: 2px;
+    margin-left: -5px;
     margin-bottom: 48px;
     padding: 0;
     width: 380px;
@@ -337,34 +342,42 @@
     padding: 0;
 
     &--crop {
-      width: 48px;
-      height: 48px;
-      padding-top: 3px;
-      padding-right: 2px;
+      width: 45px;
+      height: 45px;
+      // padding-top: 3px;
     }
 
     &--fill {
-      width: 48px;
-      height: 48px;
-      padding-top: 5px;
+      width: 50px;
+      height: 50px;
+      // padding-top: 5px;
     }
 
     &--contract {
       width: 32px;
       height: 32px;
-      padding-right: 6px;
+      // padding-right: 6px;
     }
   }
 
   .upload__range {
-    width: 288px;
-    margin-right: 0;
+    width: 285px;
+    margin-right: -5px;
     margin-left: 10px;
+    margin-top: 23px;
 
     &::after {
       left: -90px;
       width: 410px;
     }
+  }
+
+  .upload__range--crop {
+    margin-top: 23px;
+  }
+
+  .upload__range--contract {
+    margin-top: 20px;
   }
 
   .upload__range--crop::before {
@@ -385,10 +398,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
+    min-height: 52px;
     width: 185px;
     margin-top: 85px;
     margin-left: 0;
     margin-right: 0;
+    padding-top: 10px;
+    padding-bottom: 16px;
 
     &--post {
       margin-right: 38px;

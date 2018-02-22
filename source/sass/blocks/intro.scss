@@ -19,10 +19,10 @@
 }
 
 .intro__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  // width: 280px;
+  // margin: 0 auto;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }
 
 .intro__wrapper--index {
@@ -36,6 +36,13 @@
     background-image: url("../img/iphone-hand-mobile@2x.png");
     background-size: 258px auto;
   }
+}
+
+.intro__wrapper--form {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .intro__btn {
@@ -142,6 +149,7 @@
     padding-top: 50px;
     padding-left: 0;
     padding-right: 0;
+    margin: 0 auto;
   }
 
   .intro__wrapper--index {
