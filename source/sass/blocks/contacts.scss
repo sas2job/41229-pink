@@ -15,22 +15,25 @@
 .contacts__title {
   margin-bottom: 28px;
   font-family: $font-open-sans;
-  font-weight: 400;
-  font-size: 23px;
+  font-weight: 200;
+  font-size: 24px;
   line-height: 30px;
 
   &--phone {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0;
   }
 
   &--email {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0;
   }
 
   &--address {
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 18px;
     margin-bottom: 0;
   }
 }
