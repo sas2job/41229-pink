@@ -544,7 +544,8 @@ input[type="radio"]:checked:disabled + .form__radio {
       position: absolute;
       display: block;
       top: 7px;
-      right: -22px;
+      right: 2px;
+      // right: -22px;
       width: 62px;
       height: 58px;
       padding-top: 16px;
